@@ -11,7 +11,7 @@ pool:
 
 steps:
 - bash: |
-      echo "##[debug]${build.artifactstagingdirectory}"
+      echo "##[debug]${{Build.ArtifactStagingDirectory}}"
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
