@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo '${{Build.ArtifactStagingDirectory}}''
+- script: echo '${{build.artifactstagingdirectory}}''
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
